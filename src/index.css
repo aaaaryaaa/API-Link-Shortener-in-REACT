@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ul{
+  list-style: none;
+  align-items: start;
+}
+button{
+  margin: 0;
+  border: 0;
+  background: none;
+  color:white;
+}
+.navimg{
+  height: 4rem;
+  width: auto;
+}
+.mobilenav{
+  width: 100%;
+  line-height: 2.1rem;
+}
+.mobilenav a{
+  color: white;
+}
+.navbtn{
+  top: 0.3rem;
+  left: 18rem;
+}
+.loginsign{
+  height: 2.5rem;
+  border-radius: 20px;
+}
+#signup{
+  border-color: transparent;
+  background:hsl(180, 66%, 49%);
+}
+#signup:hover{
+  background-color: hsl(180, 63%, 36%);
+}
+.shortener-box{
+  background-color: hsl(257, 27%, 26%) ;
+  color: white;
+  border-radius: 10px;
+  height: 10rem;
+}
+.shortener-box input{
+  border-radius: 5px;
+  position: relative;
+  top: 0.5rem;
+  right: 1rem;
+  width: 40rem;
+}
+.shortener-box button{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 5px;
+  height: 2.7rem;
+  width: 15rem;
+  position: relative;
+  top: 0.3rem;
+}
+.shortener-box button:hover{
+  background-color: hsl(180, 63%, 36%);
+}
+.showcaseimg{
+  max-width: 100%;
+  max-height: 100%;
+}
+.showcase p{
+  font-size: x-large;
+}
+#getstarted:hover{
+  background-color: hsl(180, 63%, 36%);
+}
+
+ @media screen and (max-width:376px) {
+  .navimg{
+    width: auto;
+    height: 3rem;
+  }
+  .showcaseimg{
+    width: 16rem;
+    height: auto;
+  } 
+  .shortener-box{
+    width: 90%;
+    height: 12.5rem;
+  }
+  .shortener-box form{  
+    border-radius: 20px;
+    width: auto;  
+  }
+  .shortener-box input{
+    position: relative;
+    left: 0.05rem;
+    width: 17rem;
+  }
+  .shortener-box button{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    position: relative;
+    margin-top: 1.6rem;
+    left: 5rem;
+    width: 8rem;
+  }
+}

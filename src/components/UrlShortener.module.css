@@ -1,0 +1,177 @@
+.container{
+    margin: auto;
+    position: relative;
+    top: 1rem;
+    width: 1330px;
+    background-color:hsl(257, 27%, 26%);
+    height:10rem;
+    border-radius: 16px;
+    
+}
+.boxes{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.linkbox{
+    border-radius: 4px;
+    background-color: white;
+    width: 40rem;
+    height: 2.7rem;
+    text-align: left;
+}
+.linkbox span{
+    position: relative;
+    left: 3rem;
+    top: 0.5rem;
+}
+.linkbtn{
+    background-color: hsl(180, 66%, 49%);
+    width: 15rem;
+    height: 2.7rem;
+    border-radius: 5px;
+}
+.linkbox, .linkbtn{
+    position: relative;
+    top: 3.4rem;
+    right: 1.5rem;
+}
+@media screen and (max-width: 376px) {
+    .container{
+        width: 340px;
+        height: 13rem;
+    }
+    .boxes{
+        display: grid;
+    }
+    .linkbox{
+        border-radius: 4px;
+        background-color: white;
+        width: 17rem;
+        height: 2.7rem;
+        position: relative;
+        right: 1rem;
+        text-align: left;
+    }
+    .linkbtn{
+        background-color: hsl(180, 66%, 49%);
+        width: 5rem;
+        height: 2.7rem;
+        position: relative;
+        left: 5.5rem;
+        bottom: 7rem;
+        border-radius: 5px;
+    }
+}
+
+
+/* import { useState } from "react";
+import styles from './UrlShortener.module.css';
+
+// const getLocalStorage = () => {
+//     let links = localStorage.getItem("links")
+
+//     if (links) {
+//         return JSON.parse(localStorage.getItem("links"))
+//     } else {
+//         return []
+//     }
+// }
+
+export default function UrlShortener() {
+    const [text, setText] = useState("")
+    const [link, setLink] = useState([])
+
+    const linkstore = {
+        original: text,
+        short: ''
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(text)
+
+        if (!text) {
+            alert("Input is empty")
+        } else {
+            const shortenLink = async () => {
+                //eslint-disable-next-line
+                const response = await fetch('/v4/shorten', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer 0efa9702ac418d2ff7724b8728e4108c77afd151`
+                    },
+                    body: JSON.stringify({ long_url: text })
+                })
+                    .then(response => {
+                        response.json()
+                    })
+                    .then(data => console.log(data.link))
+                    .catch(error => console.error(error));
+
+                linkstore.short=link
+                setText("")
+            }
+
+            shortenLink();
+        }
+    }
+
+    // const handleCopy = () => {
+    //     navigator.clipboard.writeText(links.full_short_link)
+    //     setButtonText("Copied!")
+    // }
+
+    // useEffect(() => {
+    //     localStorage.setItem("links", JSON.stringify(linkstore))
+    // }, [linkstore])
+
+    return (
+        <>
+            <div className="">
+                <div className="shortener-box container">
+                    <form className="form shortener-bar d-flex justify-content-center align-items-center p-5" onSubmit={handleSubmit}>
+                        <div className="">
+                            <input
+                                type="url"
+                                placeholder="Shorten a link here"
+                                className="w-full py-2 px-5 "
+                                value={text}
+                                onChange={(e) => setText(e.target.value)}
+                            />
+                            <button
+                                type="submit"
+                                className="btn shortener-btn"
+                                onClick={handleSubmit}
+                            >
+                                Shorten It!
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div className={styles.container}>
+                <article className={styles.link}>
+                    <ul className={styles.boxes}>
+                    <li className="">
+                        <button className={styles.button}>
+                        {link}
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                        // onClick={handleCopy}
+                        className="btn btn-primary"
+                        >
+                        Copy
+                        </button>
+                    </li>
+                    </ul>
+                </article>
+            </div>
+            </div>
+        </>
+    )
+} */
