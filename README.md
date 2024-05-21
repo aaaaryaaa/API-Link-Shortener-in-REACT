@@ -1,4 +1,4 @@
-#API Link Shortener in React
+# API Link Shortener in React
 
 This React website basically can take in any long URL and shorten it
 
